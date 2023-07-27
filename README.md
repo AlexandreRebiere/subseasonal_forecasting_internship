@@ -1,5 +1,5 @@
 # subseasonal_forecasting_internship
-This GitHub corresponds to the internship realized by Alexandre REBIERE from May to July 2023. It consisted in improving subseasonal forecasting by adding new features (Soil Moisture, Gross Primary Production, Ecosystem Respiration, Elevation, El Niño ...) to an existing dataset used in the RODEO forecast competition. Please read the file "Internship_report:paper.pdf" for more informations.
+This GitHub corresponds to the internship realized by Alexandre REBIERE from May to July 2023. It consisted in improving subseasonal forecasting by adding new features (Soil Moisture, Gross Primary Production, Ecosystem Respiration, Elevation, El Niño ...) to an existing dataset used in the RODEO forecast competition.
 
 **State of the Art**
 
@@ -15,7 +15,7 @@ During the study we decided to add some new relevant data such as Soil Moisture 
 
 **WARNING :**
 
-This project has been made in a cotext of a very short (3 months) research internship at the LEAP center (Learning the Earth with AI & Physics), Columbia University, New York. It may contains mistakes or imprecisions. If you have any questions regarding the use or the results of this GitHub Repositery, please send an email to "alexandre.rebiere@espci.org" or directly to Pierre Gentine, the LEAP director, at "pg2328@columbia.edu".
+This project has been made in a context of a very short (3 months) research internship at the LEAP center (Learning the Earth with AI & Physics), Columbia University, New York. It may contains mistakes or imprecisions. If you have any questions regarding the use or the results of this GitHub Repositery, please send an email to "alexandre.rebiere@espci.org" or directly to Pierre Gentine, the LEAP director, at "pg2328@columbia.edu". Please find more informations in the file "Internship_report:paper.pdf".
 
 **First Step : Preprocess the data**
 
