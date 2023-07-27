@@ -13,3 +13,19 @@ During the study we decided to add some new relevant data such as Soil Moisture 
 - elevation can be found on this repository (new_features)
 - El Nino correlations can be found at : "https://psl.noaa.gov/data/correlation/table.html"
 
+**WARNING :**
+
+This project has been made in a cotext of a very short (3 months) research internship at the LEAP center (Learning the Earth with AI & Physics), Columbia University, New York. It may contains mistakes or imprecisions. If you have any questions regarding the use or the results of this GitHub Repositery, please send an email to "alexandre.rebiere@espci.org" or directly to Pierre Gentine, the LEAP director, at "pg2328@columbia.edu".
+
+**First Step : Preprocess the data**
+
+- In src/experiments open "create_data_matrices.ipynb". This notebook uses "experiments_util.py" functions, a file you can modify depending on the features you want to take into account. It creates and save a matrix containing time, latitude and longitude columns + all the features you want to study shifted with the amount of day you want depending on *target_horizon*.
+- Once this previous matrice has been created, open "create_matrix_NN.ipynb". This notebook aims at reshaping the initial dataset, concatenating data with new features, create a pytorch tensor that will be used in a Pytorch Neural Network model.
+
+**Second step : Train the model + evaluate performances**
+
+Open the file "linear_model_predictions.ipynb" using functions from "tools.py". The model consists in a basic linear layer over the features using Pytorch. Performances are evaluated in terms of skills. Skills values can be stored in tensors of size (year, season, latitude, longitude), from year 2011 to 2017, so that you can study then skills improvement regarding seasons, year, or geographical areas. A similar study can be made on SHAP values.
+
+**Third step : Analyzing the results**
+
+Open the file "Visualization.ipynb" using functions from "Visualization_functions.py". In this notebook you will find different plots that reveals the climate forecast improvement when adding new_features. Many plots will help you analyze where (which climate region) predictions increases the most, when (seasons) and thanks to which features (SHAP values, Layerwise Relevance Propagation).
